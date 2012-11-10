@@ -1,0 +1,10 @@
+<html>
+    <body>
+        ${state_info}
+        <form action="${request.url}" method="post">
+        <tal:block repeat="transition transitions">
+            <input type="submit" name="transition" value="${transition.name}" >
+        </tal:block>
+        </form>
+    </body>
+</html>
